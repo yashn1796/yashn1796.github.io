@@ -410,7 +410,7 @@ a[data-fancybox] img {
 
 .home-section {
   background-color: rgb(255, 255, 255);
-  padding: 110px 0 110px 0;
+  padding: 50px 0 50px 0;
   animation: intro 0.3s both;
   animation-delay: 0.15s;
 }
@@ -423,7 +423,7 @@ a[data-fancybox] img {
   background-color: rgb(247, 247, 247);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   .home-section {
     padding: 60px 0 60px 0;
   }
@@ -1479,7 +1479,6 @@ table > tfoot > tr > th,
 table > thead > tr > td,
 table > tbody > tr > td,
 table > tfoot > tr > td {
-  padding: 8px;
   line-height: 1.43;
   vertical-align: top;
   border-top: 1px solid #ddd;
