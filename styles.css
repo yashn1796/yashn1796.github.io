@@ -530,10 +530,12 @@ a[data-fancybox] img {
 }
 
 #profile .portrait {
-  width: 150px;
+  width: 200px;
   height: 200px;
   margin: 0 auto;
   object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 
 #profile .portrait-title h2 {
@@ -573,7 +575,7 @@ a[data-fancybox] img {
 }
 
 .big-icon {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 ul.ul-interests li {
