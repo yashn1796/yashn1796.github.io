@@ -47,6 +47,8 @@
 
   <title>Yash Nandola</title>
 
+
+
 </head>
 
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
@@ -216,25 +218,61 @@
     </div>
   </div>
 
-  <com.denzcoskun.imageslider.ImageSlider
-        android:id="@+id/image_slider"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        app:iss_auto_cycle="true"
-        app:iss_period="1000"
-        app:iss_delay="0"/>
+  <!-- image slider start -->
+  
+  <div class="slider">
+    <div class="slides">
+      <!-- radio buttons start-->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <!-- radio buttons end-->
+      <!--slide images start-->
+      <div class ="slide first">
+        <img src="/img/img1.png" alt="">
+      </div>
+      <div class ="slide">
+        <img src="/img/img2.png" alt="">
+      </div>
+      <div class ="slide">
+        <img src="/img/img3.png" alt="">
+      </div>
+      <div class ="slide">
+        <img src="/img/img4.png" alt="">
+      </div>
+      <!--slide images end-->
+      <!-- automatic navigation start-->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+      <!--automatic navigation end-->
+    </div>
+    <!--manual navigation start-->
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>   
+    </div>
+    <!-- manual navigation end-->
+  </div>
+  <!-- image slider end -->
 
-        val imageList = ArrayList<SlideModel>() // Create image list
-
-// imageList.add(SlideModel("String Url" or R.drawable)
-// imageList.add(SlideModel("String Url" or R.drawable, "title") You can add title
-
-imageList.add(SlideModel("https://bit.ly/2YoJ77H", "The animal population decreased by 58 percent in 42 years."))
-imageList.add(SlideModel("https://bit.ly/2BteuF2", "Elephants and tigers may become extinct."))
-imageList.add(SlideModel("https://bit.ly/3fLJf72", "And people do that."))
-
-val imageSlider = findViewById<ImageSlider>(R.id.image_slider)
-imageSlider.setImageList(imageList)
+  <script type="text/javascript">
+    var counter=1;
+    setInterval(function(){
+      document.getElementbyId('radio' + counter).checked=true;
+      counter++;
+      if(counter>4){
+        counter=1;
+      }
+    }, 5000);
+    
+  </script>
 </section>  
  
 
