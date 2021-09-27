@@ -126,6 +126,20 @@ video {
   max-width: 100%;
   display: block;
 }
+details > summary::marker {
+  content: "";
+}
+
+details > summary::before {
+  content: " + ";
+  font-size: 1.5rem;
+  width: 1.5rem;
+  text-align: center;
+}
+
+details[open] > summary::before {
+  content: " - ";
+}
 
 
 video {
