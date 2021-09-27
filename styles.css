@@ -99,7 +99,6 @@ h2 {
 }
 h3 {
   font-weight: 700;
-  margin-top: 1.5rem;
   font-size: 1.25rem;
 }
 h4, h5, h6 {
@@ -126,6 +125,7 @@ video {
   max-width: 100%;
   display: block;
 }
+
 
 video {
   width: 100%;
@@ -530,8 +530,8 @@ a[data-fancybox] img {
 }
 
 #profile .portrait {
-  width: 200px;
-  height: 200px;
+  width: 175px;
+  height: 175px;
   margin: 0 auto;
   object-fit: cover;
   border-radius: 50%;
@@ -1471,7 +1471,7 @@ nav#navbar-main li.nav-item {
 table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 1rem;
+  /*margin-bottom: 0.25rem;*/
   font-size: 0.95rem;
 }
 
